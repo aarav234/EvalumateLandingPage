@@ -19,7 +19,7 @@ export default function MainContent() {
     <main className="main-content visible">
       <section className="hero-section">
         <img
-          src="/logo-removebg-preview.png"
+          src="/logo-removebg-preview_without_ai.png"
           alt="Evalumate Logo"
           className="hero-logo"
         />
