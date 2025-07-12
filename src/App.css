@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064273;
+  background-color: #f0f6ff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0e5ea5;
+}
+
+nav .cta {
+  font-weight: 600;
+  color: #0e5ea5;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  color: #0e0e0e;
+  min-height: 100vh;
+}
+
+.hero-img,
+.demo-img {
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+  background: #cfe4ff;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.features {
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+.contact-form {
+  background: #f0f6ff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #cce0f5;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #0e5ea5;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
